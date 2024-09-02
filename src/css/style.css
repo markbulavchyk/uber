@@ -1,0 +1,201 @@
+* {
+    font-family: 'Roboto', sans-serif;
+}
+
+nav {
+    min-height: 50px;
+    background-color: #212121;
+
+    /* here we did a fixed menu*/
+    position: fixed; 
+    width: 100%;
+    z-index: 100;
+    /* here we did a fixed menu*/
+}
+.header {
+    position: relative;
+}
+.menu {
+    display: flex;
+    justify-content: space-between;
+    padding: 13px 70px;
+    margin: 0;
+    list-style-type: none;
+}
+.menu .menu_link {
+    color: #FFF;
+    font-size: 15px;
+    text-decoration: none;
+    font-weight: 300;
+}
+.menu .menu_item {
+    border-right: 2px dotted black;
+    padding-right: 28px;
+}
+.menu li:last-child{
+    border-right: none;
+}
+
+.subheader {
+        /* here we did a fixed menu*/
+    margin-top: 50px;
+         /* here we did a fixed menu*/
+
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.6);
+    min-height: 87px; 
+    width: 100%;
+}
+
+.subheader .subheader_logo {
+    display: block;
+    max-width: 100%;
+    margin-top: 16px;
+}
+
+.subheader .subheader_official {
+    margin-top: 6px;
+    color: #FFF;
+    font-size: 13px;
+    font-weight: 400;
+    opacity: 0.5;
+}
+
+.subheader .subheader_call {
+    color: #fff;
+    font-size: 12px;
+    font-weight: 300;
+    margin-top: 23px;
+    text-align: right;
+}
+.subheader .subheader_phone {
+    display: block;
+    margin-top: 8px;
+    color: #fff;
+    font-size: 22px;
+    font-weight: 400;
+    text-transform: uppercase;
+    text-align: right;
+    line-height: 12px;
+    text-decoration: none;
+}
+.subheader .subheader_btn {
+    margin-top: 19px;
+    width: 172px;
+    height: 46px;
+    border-radius: 4px;
+    background: linear-gradient(0deg, #1EACC7 0%, #4CE2FF 100%);
+    box-shadow: 0px -3px 0px 0px rgba(0, 0, 0, 0.12) inset;
+    color: #FFF;
+    text-align: center;
+    text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.21);
+    font-size: 14px;
+    font-weight: 400;
+    text-transform: uppercase;
+    border: none;
+}
+.promo {
+    min-height: 800px;
+    background: url('../img/uber_bg.jpg') center center/cover no-repeat;
+    padding: 200px 0 135px 0;
+}
+.promo .promo_header {
+    color: #FFF;
+    font-size: 60px;
+    font-weight: 700;
+    text-transform: uppercase;
+    line-height: 60px;
+    text-align: center;
+    margin: 0;
+}
+.promo .promo_subheader {
+    color: #FFF;
+    font-size: 36px;
+    font-weight: 700;
+    text-transform: uppercase;
+    line-height: 36px;
+    text-align: center;
+    margin: 0;
+    margin-top: 22px;
+}
+.promo .promo_descr {
+    margin-top: 27px;
+    color: #FFF;
+    text-align: center;
+    font-size: 18px;
+    font-weight: 400;
+}
+.promo .promo_btn {
+    display: block;
+    margin: 116px auto 0 auto;
+    width: 259px;
+    height: 63px;
+    border-radius: 4px;
+    background: linear-gradient(0deg, #1EACC7 0%, #4CE2FF 100%);
+    box-shadow: 0px -4px 0px 0px rgba(0, 0, 0, 0.12) inset;
+    color: #FFF;
+    text-align: center;
+    text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.21);
+    font-size: 18px;
+    font-weight: 400;
+    text-transform: uppercase;
+    border: none;
+}
+.reasons {
+    padding: 20px 0 64px 0;
+}
+/* reusable classes */
+.label {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    width: 115px;
+    height: 27px;
+    background-color: #000;
+    color: #FFF;
+    font-size: 11px;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+
+/* reusable classes */
+.title {
+    margin-top: 33px;
+    margin-bottom: 0;
+    color: #222;
+    text-align: center;
+    font-size: 38px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.reasons .row {
+    margin-top: 16px;
+}
+.reasons_item_wrapper {
+    display: flex;
+    gap: 25px;
+    margin-top: 26px;
+}
+.reasons_item_circle {
+    width: 116px;
+    height: 116px;
+    border-radius: 50%;
+    background-color: #1EACC7;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.reasons_item_text {
+    width: 371px;
+    color: #202020;
+    font-size: 15px;
+    font-weight: 300;
+    line-height: 21px;
+}
+.reasons_item_text span {
+    color: #1EACC7;
+    font-size: 17px;
+    font-weight: 400;
+}
